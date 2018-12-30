@@ -1,5 +1,6 @@
 pipeline {
- agent any
+  agent any
+  stages{
     stage('checkout'){
         git url: 'https://github.com/chikoo4422/demo-mavenproject.git'
     }
@@ -7,4 +8,5 @@ pipeline {
         sh "./mvnw clean install -DskipTests"
     }
      
+}
 }
