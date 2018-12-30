@@ -1,4 +1,4 @@
-Pipeline {
+pipeline {
  agent any
     stage('checkout'){
         git url: 'https://github.com/chikoo4422/demo-mavenproject.git'
